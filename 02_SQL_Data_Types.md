@@ -1,7 +1,7 @@
 
 ---
 
-## ❓ What are SQL Data Types?
+##  What are SQL Data Types?
 
 SQL data types define the kind of **values** that can be stored in a database column.
 
