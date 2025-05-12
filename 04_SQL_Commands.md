@@ -111,9 +111,62 @@ COMMIT;
 
 ---
 
-> 📌 **Tip:** Remember the five categories using this phrase:
-> **"Data Definition, Query, Manipulation, Control, and Transaction."**
 
-```
+# 🗃️ DROP vs TRUNCATE vs DELETE in SQL
+
+This document explains the key differences between the `DROP`, `TRUNCATE`, and `DELETE` commands in SQL. All three are used to remove data, but they behave differently in terms of structure, speed, and rollback capability.
 
 ---
+
+## 🔍 Purpose
+
+| Command  | Description |
+|----------|-------------|
+| `DROP`   | Completely deletes the table including its structure |
+| `TRUNCATE` | Removes all rows from the table, but keeps the structure |
+| `DELETE` | Deletes specific rows using conditions (optional) |
+
+---
+
+## 🔄 Key Differences
+
+| Feature | `DROP` | `TRUNCATE` | `DELETE` |
+|--------|--------|------------|----------|
+| Removes Table Structure | ✅ Yes | ❌ No | ❌ No |
+| Removes All Data | ✅ Yes | ✅ Yes | ✅ Optional |
+| Supports `WHERE` Clause | ❌ No | ❌ No | ✅ Yes |
+| Can Be Rolled Back | ❌ No (irreversible) | ✅ Yes (if inside a transaction) | ✅ Yes |
+| Affects Table Schema | ✅ Deletes schema | ❌ Keeps schema | ❌ Keeps schema |
+| Triggers Executed | ❌ No | ❌ No | ✅ Yes |
+| Execution Speed | ⚡ Fastest | ⚡ Faster | 🐢 Slower (row-by-row) |
+
+---
+
+## 💡 Use Cases
+
+- Use `**DELETE**` when:
+  - You want to remove selected rows using a condition.
+  - You need to fire triggers or maintain audit logs.
+
+- Use `**TRUNCATE**` when:
+  - You want to quickly delete all rows from a table.
+  - You don’t need triggers or conditions.
+  - You want to keep the table structure for future use.
+
+- Use `**DROP**` when:
+  - You want to permanently remove the table and its data.
+
+---
+
+## 🧪 SQL Examples
+
+```sql
+-- DELETE specific rows
+DELETE FROM employees WHERE department = 'HR';
+
+-- TRUNCATE the entire table (remove all rows)
+TRUNCATE TABLE employees;
+
+-- DROP the table completely
+DROP TABLE employees;
+
