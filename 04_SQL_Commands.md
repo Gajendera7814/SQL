@@ -1,9 +1,5 @@
 
----
 
-### ✅ `README.md` — **SQL Commands**
-
-````markdown
 # 🛠️ SQL Commands – DDL, DQL, DML, DCL, TCL
 
 This guide explains the five main types of SQL commands with examples. These commands are the foundation for interacting with relational databases.
