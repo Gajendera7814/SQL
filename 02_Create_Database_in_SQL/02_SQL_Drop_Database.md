@@ -1,6 +1,4 @@
 
-````markdown
-
 ---
 
 ## 📘 What is SQL DROP DATABASE?
