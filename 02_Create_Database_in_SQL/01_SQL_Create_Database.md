@@ -1,4 +1,7 @@
-# 🏗️ SQL CREATE DATABASE – Complete Guide
+
+---
+
+# 🏗️ SQL CREATE DATABASE 
 
 This README provides a complete overview of the `CREATE DATABASE` command in SQL, how to switch to a database, delete one, system compatibility, and common mistakes to avoid.
 
