@@ -3,6 +3,9 @@
 
 ## 📘 What is DROP TABLE in SQL?
 
+The `DROP TABLE` statement in SQL is used to **permanently delete a table and all of its data** from the database. This action is **irreversible** — once the table is dropped, it cannot be recovered unless a backup is available.
+
+
 `DROP TABLE` removes:
 
 - The table definition (structure)
