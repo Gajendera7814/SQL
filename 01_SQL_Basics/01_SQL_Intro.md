@@ -6,7 +6,7 @@ SQL (Structured Query Language) is used to communicate with relational databases
 
 ---
 
-## ❓ Why Do We Need to Use SQL?
+##  Why Do We Need to Use SQL?
 - Manage and organize data
 - Insert, update, delete, and query data
 - Perform data analysis
