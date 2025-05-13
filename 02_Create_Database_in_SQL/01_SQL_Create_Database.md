@@ -1,12 +1,6 @@
 
 ---
 
-# 🏗️ SQL CREATE DATABASE 
-
-This README provides a complete overview of the `CREATE DATABASE` command in SQL, how to switch to a database, delete one, system compatibility, and common mistakes to avoid.
-
----
-
 ## 📘 What is the `CREATE DATABASE` Command?
 
 The `CREATE DATABASE` command is used to **create a new database** in SQL. It's the first step in organizing and managing your data.
