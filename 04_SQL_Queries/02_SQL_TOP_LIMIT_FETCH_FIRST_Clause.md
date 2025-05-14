@@ -1,7 +1,6 @@
 
 ---
 
-````markdown
 # SQL TOP, LIMIT, FETCH FIRST Clause
 
 The `TOP`, `LIMIT`, and `FETCH FIRST` clauses in SQL are used to retrieve a specific number of records from a table. These are especially useful when working with large datasets to enhance performance and manageability.
