@@ -1,4 +1,6 @@
 
+---
+
 # SQL IS NULL
 
 The SQL IS NULL operator is a logical operator used to identify and filter out rows with NULL values in a column. A NULL value represents missing or undefined data in a database. It is different from a zero value or blank space, and it indicates that the value is unknown.
