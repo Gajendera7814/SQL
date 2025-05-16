@@ -141,7 +141,7 @@ SELECT * FROM Table_name;
 
 ## A pictorial view of all the keys present in the table is shown below :
 
-![Keys Diagram](https://www.geeksforgeeks.org/sql-alternate-key/)
+https://www.geeksforgeeks.org/sql-alternate-key/
 *Note: Replace the URL with an actual image if needed.*
 
 ---
